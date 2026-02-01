@@ -122,7 +122,7 @@ nav.navbar.bootsnav {
     color: #84A98C;
     font-size: 20px;
     font-weight: 600;
-    padding: 33px 0px 57px;
+    padding: 28px 0px 48px; /* reduced ~15% vertically from original */
     text-transform: uppercase;
 }
 /*.navbar-brand*/
@@ -132,14 +132,15 @@ nav.navbar.bootsnav ul.nav > li > a {
     font-size: 16px;
     font-weight: 400;
     text-transform:uppercase;
+    color: #84A98C;
     -webkit-transition: 0.3s linear; 
     -moz-transition: 0.3s linear; 
     -ms-transition: 0.3s linear; 
     -o-transition: 0.3s linear; 
     transition: 0.3s linear;
 }
-nav.navbar.bootsnav ul.nav > li > a {padding: 35px 20px;}
-nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:focus,nav.navbar.bootsnav ul.nav > li.active>a{color: #d92cf9;}
+nav.navbar.bootsnav ul.nav > li > a {padding: 30px 20px;} /* reduced ~15% vertically from original 35px */
+nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:focus,nav.navbar.bootsnav ul.nav > li.active>a{color: #52796F;}
 
 nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after {
     content: "";
@@ -149,7 +150,7 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
     margin-left: 15px;
 }
 .sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a {color:#6a708e;}
-.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:hover,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:focus,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li.active>a{color: #d92cf9;}
+.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:hover,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:focus,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li.active>a{color: #52796F;}
 /*.nav li*/
 
 
@@ -200,21 +201,21 @@ nav.navbar.bootsnav .navbar-toggle i{color: #84A98C;}
     content: " ";
     top:0;
     left:0;
-    background:rgba(31,44,108,.65);
+    background:rgba(53, 79, 82, 0.75);
     width:100%;
     height:100%;
 }
 
 /*.header-text-area*/
 .header-text h2 {
-    color: #CAD2C5;
+    color: #FFFFFF;
     font-size: 54px;
-    font-weight: 500;
+    font-weight: 750;
     line-height: 1.5;
 }
 .header-text h2 span {color: #84A98C;}
 .header-text p {
-    color: #CAD2C5;
+    color: #FFFFFF;
     font-size: 20px;
     font-weight: 300;
     margin: 30px 0 60px;
@@ -275,7 +276,6 @@ nav.navbar.bootsnav .navbar-toggle i{color: #84A98C;}
     left:  0;
     width: 109%;
     height:  100%;
-    background: rgba(31,44,108,.3);
 }
 .single-about-img img {
     max-width: 500px;
@@ -686,7 +686,6 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     background: #f9fbfd;
     padding: 50px 0 100px;
 }
-.single-contact-box {padding-top: 100px;}
 .contact-form  .form-group {
     margin-bottom: 20px;
     
@@ -756,6 +755,11 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 /* contact-adress */
 
+/* Hover variant: change text color to site green */
+.single-contact-add-info-hover:hover {
+    color: #84A98C;
+}
+
 /*.contact-add-info */
 .contact-add-info { margin: 42px 0 52px;}
 .single-contact-add-info h3 {
@@ -810,20 +814,20 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     font-size: 20px;
     cursor: pointer;
     color: #fff;
-    background:#b636ff;
-	border:1px solid #b636ff;
-	border-radius:50%;
-	-webkit-transition: .5s; 
-	-moz-transition:.5s; 
-	-ms-transition:.5s; 
-	-o-transition:.5s;
+    background: #52796F;
+    border: 1px solid #52796F;
+    border-radius:50%;
+    -webkit-transition: .5s; 
+    -moz-transition:.5s; 
+    -ms-transition:.5s; 
+    -o-transition:.5s;
     transition: .5s;
-	z-index: 2;
+    z-index: 2;
 }
 #scroll-Top  .return-to-top:hover {
     background:#fff;
-    color: #b636ff;
-	border:1px solid #b636ff;
+    color: #52796F;
+    border:1px solid #52796F;
 }
 
 #scroll-Top  .return-to-top i{
@@ -852,8 +856,7 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 #experience,
 #profiles,
 #portfolio,
-#clients,
-#contact {
+#clients {
     display: none;
 }
 /*========================Thank you=================
