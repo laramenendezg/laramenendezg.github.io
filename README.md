@@ -1,10 +1,9 @@
-# laramenendezg.github.io
+# Lara Menendez - Personal Portfolio
 
-Personal website / CV for Lara Menendez.
+This repo is my first github project!
+It contains a the static site built with a downloaded template. 
 
-This repo contains the static site built with a downloaded template. The site is published via GitHub Pages at:
-
-https://laramenendezg.github.io
+The site is published via GitHub Pages at: https://laramenendezg.github.io
 
 To update the site:
 - Clone this repo
