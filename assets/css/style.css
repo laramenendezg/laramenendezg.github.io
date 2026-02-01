@@ -21,6 +21,7 @@ font-family: 'Montserrat', sans-serif;
 9.  Portfolio
 10. Clients
 11. Contact
+12. Sections visibility management
 
 /*-------------------------------------
 		1.General css (Reset code)
@@ -38,7 +39,7 @@ font-family: 'Montserrat', sans-serif;
 	box-sizing:border-box;
 }
 body{
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size:16px;
 	color: #676a81;
 	background: #fff;
@@ -58,15 +59,14 @@ h1,h2,h3,h4,h5,h6 {
 	margin: 0;
 	color:#43485c;
     font-size: 16px;
-	font-family: 'Poppins', sans-serif;
-	text-transform: capitalize;
+	font-family: 'Montserrat', sans-serif;
 }
 p {
 	margin: 0;
 	line-height:1.8;
 	color:#43485c;
 	font-size:14px;
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 img{border:none;max-width:100%; height:auto;}
 ul{
@@ -106,12 +106,12 @@ html,body{
 }
 @media (min-width: 1024px){}
 nav.navbar.bootsnav.no-background {
-    background-color: #fff;
+    background-color: #ffffff;
     border: none;
 }
 
 nav.navbar.bootsnav {
-    background-color: #fff;
+    background-color: #ffffff;
     border-bottom: transparent;
     box-shadow: 0 3px 15px rgba(0,0,0,.2);
 }
@@ -119,7 +119,7 @@ nav.navbar.bootsnav {
 /*.navbar-brand*/
 .navbar-header a.navbar-brand,.navbar-header a.navbar-brand:hover,.navbar-header a.navbar-brand:focus {
     display: inline-block;
-    color: #d92cf9;
+    color: #84A98C;
     font-size: 20px;
     font-weight: 600;
     padding: 33px 0px 57px;
@@ -163,7 +163,7 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
     -webkit-box-shadow: inset 0 0 8px #000;
 }
 .menu-ui-design::-webkit-scrollbar-thumb {
-  background-color: #d92cf9;
+  background-color: #84A98C;
 }
 /*.menu-ui-design*/
 
@@ -173,11 +173,11 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
 nav.navbar.bootsnav .navbar-toggle {
     position: relative;
     background-color: transparent;
-    border: 1px solid #d92cf9;
+    border: 1px solid #84A98C;
     padding: 10px;
     top: 0;
 }
-nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
+nav.navbar.bootsnav .navbar-toggle i{color: #84A98C;}
 /*.navbar-toggle */
 
 
@@ -207,18 +207,16 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 
 /*.header-text-area*/
 .header-text h2 {
-    color: #fff;
+    color: #CAD2C5;
     font-size: 54px;
-    font-weight: 700;
-    text-transform: uppercase;
+    font-weight: 500;
     line-height: 1.5;
 }
-.header-text h2 span {color: #d92cf9;}
+.header-text h2 span {color: #84A98C;}
 .header-text p {
-    color: #fff;
+    color: #CAD2C5;
     font-size: 20px;
     font-weight: 300;
-    text-transform: uppercase;
     margin: 30px 0 60px;
     letter-spacing: 1px;
 }
@@ -227,10 +225,9 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     height: 60px;
     line-height: 60px;
     border-radius: 3px;
-    text-transform: capitalize;
-    color: #fff;
-    background: #b636ff;
-    border:1px solid #b636ff;
+    color: #ffffff;
+    background: #84A98C;
+    border:1px solid #84A98C;
     box-shadow: 0 5px 20px rgba(0,0,0,.2);
     -webkit-transition: 0.3s linear; 
     -moz-transition: 0.3s linear; 
@@ -238,7 +235,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
     -o-transition: 0.3s linear; 
     transition: 0.3s linear;
 }
-.header-text a:hover{ box-shadow: 0 5px 20px rgba(0,0,0,.4);background:#9f00ff;border: 1px solid #9f00ff;}
+.header-text a:hover{ box-shadow: 0 5px 20px rgba(0,0,0,.4);background:#52796F;border: 1px solid #52796F;}
 /*.header-text-area*/
 
 /*-------------------------------------
@@ -265,7 +262,6 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 .single-about-add-info h3 {
     color: #636a82;
     font-size: 16px;
-    text-transform: capitalize;
 }
 .single-about-add-info p {font-weight:  300;border:  0;padding: 0;margin-top: 3px;}
 /*.single-about-txt*/
@@ -339,7 +335,7 @@ nav.navbar.bootsnav .navbar-toggle i{color: #d92cf9;}
 /*.education-horizontal-timeline*/
 .education-horizontal-timeline .col-sm-4 {padding:0 2px;}
 
-.single-horizontal-timeline .experience-time h3{text-transform: capitalize;}
+
 .single-horizontal-timeline .experience-time h3 span{text-transform:lowercase;}
 .single-horizontal-timeline .timeline-content h5 {margin: 15px 0;}
 .single-horizontal-timeline p {color: #999fb3;max-width: 335px;}
@@ -546,7 +542,6 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     transition:background 0.5s linear;
 }
 .profile-icon-name {
-    text-transform: capitalize;
     color: #636a82;
     font-size: 16px;
 }
@@ -557,7 +552,6 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 .single-profile-overlay{
     display:flex;
     align-items:center;
-    text-transform: capitalize;
     justify-content:center;
     position: absolute;
     top: 0;
@@ -715,7 +709,6 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     align-items:center;
     justify-content:center;
     height:50px;
-    text-transform:capitalize;
     margin-top: 3px;
     background: #b636ff;
     border: 1px solid #b636ff;
@@ -757,7 +750,6 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 }
 .contact-add-head p {
     font-size:  16px;
-    text-transform: capitalize;
     color:  #636a82;
     font-weight:  300;
     margin-top:  6px;
@@ -800,7 +792,6 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 
 .hm-footer-copyright p{
     color: #888ea5;
-    text-transform: capitalize;
     padding: 38px 0;
 }
 .hm-footer-copyright p a {color: #888ea5;}
@@ -851,5 +842,18 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
 @keyframes example {
     0%   {bottom:0px;}
     100%  {bottom:7px;}
+}
+
+/*-------------------------------------
+        12. Sections visibility
+--------------------------------------*/
+#education,
+#skills,
+#experience,
+#profiles,
+#portfolio,
+#clients,
+#contact {
+    display: none;
 }
 /*========================Thank you=================
