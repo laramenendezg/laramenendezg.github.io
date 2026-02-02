@@ -268,18 +268,20 @@ nav.navbar.bootsnav .navbar-toggle i{color: #84A98C;}
 /*.single-about-txt*/
 
 /*.single-about-img */
-.single-about-img{position: relative;box-shadow: 0 5px 20px rgba(14,25,80,.30);}
+.single-about-img{
+    position: relative;
+    max-width: 500px; /* optional cap for large screens */
+    width: 100%;
+    margin: 0 auto;
+}
 .single-about-img:before {
-    position:  absolute;
-    content: " ";
-    top: 0;
-    left:  0;
-    width: 109%;
-    height:  100%;
+    display: none;
 }
 .single-about-img img {
-    max-width: 500px;
-    height: 468px;
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
 }
 .about-list-icon{
     display: flex;

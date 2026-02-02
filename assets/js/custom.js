@@ -49,6 +49,11 @@ $(document).ready(function(){
 				scrollTop: $(anchor.attr('href')).offset().top - 0
 			}, 1200,'easeInOutExpo');
 		});
+
+		// Close responsive navbar after clicking a link (supports Bootstrap 3 and 4)
+		$(document).on('click', '.navbar-collapse.in a, .navbar-collapse.show a', function () {
+			$('.navbar-collapse').collapse('hide');
+		});
 		
 		$('body').scrollspy({
 			target:'.navbar-collapse',
