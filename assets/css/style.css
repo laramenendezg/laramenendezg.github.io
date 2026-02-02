@@ -101,28 +101,31 @@ html,body{
         2. Header
 --------------------------------------*/
 .top-area {
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     z-index: 9999;
 }
 @media (min-width: 1024px){}
 nav.navbar.bootsnav.no-background {
-    background-color: #ffffff;
+    background: transparent;
     border: none;
 }
 
 nav.navbar.bootsnav {
-    background-color: #ffffff;
-    border-bottom: transparent;
-    box-shadow: 0 3px 15px rgba(0,0,0,.2);
+    background: transparent;
+    border-bottom: none;
+    box-shadow: none;
 }
 
 /*.navbar-brand*/
 .navbar-header a.navbar-brand,.navbar-header a.navbar-brand:hover,.navbar-header a.navbar-brand:focus {
     display: inline-block;
-    color: #84A98C;
+    color: #ffffff;
     font-size: 20px;
     font-weight: 600;
-    padding: 28px 0px 48px; /* reduced ~15% vertically from original */
+    padding: 28px 0px 48px;
     text-transform: uppercase;
 }
 /*.navbar-brand*/
@@ -132,14 +135,14 @@ nav.navbar.bootsnav ul.nav > li > a {
     font-size: 16px;
     font-weight: 400;
     text-transform:uppercase;
-    color: #84A98C;
+    color: #ffffff;
     -webkit-transition: 0.3s linear; 
     -moz-transition: 0.3s linear; 
     -ms-transition: 0.3s linear; 
     -o-transition: 0.3s linear; 
     transition: 0.3s linear;
 }
-nav.navbar.bootsnav ul.nav > li > a {padding: 30px 20px;} /* reduced ~15% vertically from original 35px */
+nav.navbar.bootsnav ul.nav > li > a {padding: 30px 20px;}
 nav.navbar.bootsnav ul.nav > li > a:hover,nav.navbar.bootsnav ul.nav > li > a:focus,nav.navbar.bootsnav ul.nav > li.active>a{color: #52796F;}
 
 nav.navbar.bootsnav ul.nav > li.dropdown > a.dropdown-toggle:after {
@@ -149,7 +152,7 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
     font-size: 8px;
     margin-left: 15px;
 }
-.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a {color:#6a708e;}
+.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a {color:#ffffff;}
 .sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:hover,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li > a:focus,.sticky-wrapper.is-sticky nav.navbar.bootsnav ul.nav > li.active>a{color: #52796F;}
 /*.nav li*/
 
@@ -174,11 +177,11 @@ nav.navbar.bootsnav ul.nav > li.dropdown span {
 nav.navbar.bootsnav .navbar-toggle {
     position: relative;
     background-color: transparent;
-    border: 1px solid #84A98C;
+    border: 1px solid #ffffff;
     padding: 10px;
     top: 0;
 }
-nav.navbar.bootsnav .navbar-toggle i{color: #84A98C;}
+nav.navbar.bootsnav .navbar-toggle i{color: #ffffff;}
 /*.navbar-toggle */
 
 
